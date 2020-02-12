@@ -12,6 +12,6 @@
 */
 
 $router->group(['middleware' => 'auth'], function () use ($router) {
-    $router->post("/payment/snap", "MidtransController@getSnapToken");
-    $router->post("/payment/snap/charge", "MidtransController@getSnapToken");
+    $router->get("/coba", "MidtransController@getSnapToken");
+    $router->get("/coba/charge", "MidtransController@getSnapToken");
 });
